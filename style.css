@@ -1,0 +1,69 @@
+body {
+  background-color: rgb(180,180,180);
+  font-family: 'PT Sans', sans-serif;
+}
+
+.header {
+  text-align: center;
+}
+
+.symptomSelector{
+  text-align: center;
+}
+
+.button {
+  text-align: center;
+}
+
+.sentence1 {
+  text-align: center;
+}
+
+.diagnosis {
+  font-weight: bolder;
+  text-align: center;
+}
+
+.sentence2 {
+  text-align: center;
+}
+
+.time {
+  font-weight: bolder;
+  text-align: center;
+}
+
+.footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  background-color: grey;
+  text-align: center;
+}
+
+.accociated {
+  text-align: center;
+}
+
+.images {
+  margin: 1em;
+  text-align: justify;
+}
+
+.images img {
+  width: 23.6%;
+  height: auto;
+  display: inline-block;
+}
+
+.images:after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 0;
+}
+
+#error_quip {
+  font-size: 10pt;
+  text-align: center;
+}

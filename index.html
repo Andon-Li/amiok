@@ -5,19 +5,83 @@
     <title>am I ok?</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" charset="utf-8"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
   </head>
-  <body>
+  <body onload=init()>
+
     <div class="header">
       am I ok?
     </div>
 
-    <div class="sentence">
-      
+    <div class="symptomSelector">
+
+      <label for="symptom1">Symptom 1:</label>
+      <select class="list1">
+        <option value="rash">rash</option>
+        <option value="headache">headache</option>
+        <option value="nausea">nausea</option>
+        <option value="blurry vision">blurry vision</option>
+        <option value="weakness">weakness</option>
+      </select>
+
+      <label for="symptom1">Symptom 2:</label>
+      <select class="list2">
+        <option value="rash">rash</option>
+        <option value="headache">headache</option>
+        <option value="nausea">nausea</option>
+        <option value="blurry vision">blurry vision</option>
+        <option value="weakness">weakness</option>
+      </select>
+
+      <label for="symptom1">Symptom 3:</label>
+      <select class="list3">
+        <option value="rash">rash</option>
+        <option value="headache">headache</option>
+        <option value="nausea">nausea</option>
+        <option value="blurry vision">blurry vision</option>
+        <option value="weakness">weakness</option>
+      </select>
+
+    </div>
+
+    <div class="button" onclick=newDiagnosis()>
+      Scan for New Diagnosis
+    </div>
+
+    <div class="sentence1">
+      Sorry, you have been diagnosed with
+    </div>
+
+    <div class="diagnosis">
+      (--------)
+    </div>
+
+    <div class="sentence2">
+      You have
     </div>
 
     <div class="time">
-
+      (--------)
     </div>
 
+
+    <div class="footer">
+
+      <div class="associated">
+        Not in any way affiliated with any of these legitimate medical resources:
+      </div>
+
+      <div class="images">
+        <img id="WebMD" src="assets/WebMD.png" alt="WebMD">
+        <img id="Mayo" src="assets/MayoClinic.png" alt="Mayo Clinic">
+        <img id="MedlinePlus" src="assets/MedlinePlus.png" alt="MedlinePlus">
+        <img id="Healthline" src="assets/Healthline.png" alt="Healthline">
+      </div>
+
+      <p id="error_quip">Error of +- 97.5 years</p>
+
+    </div>
   </body>
 </html>
